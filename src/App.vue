@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -17,16 +13,21 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+
+html {
+  font-size: calc(100vw / 1728 * 16);
+  overflow-x: hidden;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+@media screen and (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 375 * 16);
+  }
 }
 </style>

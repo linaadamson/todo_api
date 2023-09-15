@@ -1,0 +1,46 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  width: 100%;
+}
+
+.todo p {
+  font-size: 1.3rem;
+}
+
+.cross {
+  text-decoration: line-through;
+  color: rgb(176, 176, 176);
+  opacity: 0.5;
+}
+
+.btn-container {
+  display: flex;
+  /* gap: 2rem; */
+}
+
+.btn-container button {
+  border: none;
+  background: none;
+}
+
+.btn-container .complete {
+  border-right: 0.1rem solid white;
+  padding-right: 1.2rem;
+}
+.btn-container .delete {
+  padding-left: 1.2rem;
+}
+
+.btn-container img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* .btn-container button {
+  width: 1.2rem;
+  height: 1.2rem;
+} */
